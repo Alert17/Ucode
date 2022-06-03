@@ -1,0 +1,12 @@
+#post {
+  border: 2px solid grey;
+  background: lightgray;
+  padding-left: 20px;
+}
+#form {
+  padding: 20px;
+}
+
+.data {
+  padding-left: 30px;
+}
