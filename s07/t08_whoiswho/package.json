@@ -1,0 +1,16 @@
+{
+  "name": "t08",
+  "version": "1.0.0",
+  "description": "t02",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mzakusilov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-thymeleaf": "^0.3.0",
+    "thymeleaf": "^0.21.0"
+  }
+}

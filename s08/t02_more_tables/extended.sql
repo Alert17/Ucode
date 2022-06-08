@@ -1,0 +1,36 @@
+DROP TABLE IF EXISTS powers;
+DROP TABLE IF EXISTS races;
+DROP TABLE IF EXISTS teams;
+
+CREATE TABLE IF NOT EXISTS powers (
+      id INT AUTO_INCREMENT,
+      hero_id INT NOT NULL,
+      name VARCHAR NOT NULL,
+      points INT NOT NULL,
+      type ENUM('attack', 'defense') NOT NULL,
+      FOREIGN KEY (hero_id) REFERENCES heroes(id) ON DELETE CASCADE ON UPDATE CASCADE,
+      PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS races (
+     id INT AUTO_INCREMENT,
+     hero_id INT NOT NULL,
+     name VARCHAR NOT NULL,
+     FOREIGN KEY (hero_id) REFERENCES heroes(id) ON DELETE CASCADE ON UPDATE CASCADE,
+     PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS teams (
+     id INT AUTO_INCREMENT,
+     hero_id INT NOT NULL,
+     name VARCHAR NOT NULL,
+     FOREIGN KEY (hero_id) REFERENCES heroes(id) ON DELETE CASCADE ON UPDATE CASCADE,
+     PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS heroes_teams (
+     hero_id int NOT NULL,
+     team_id int NOT NULL
+     FOREIGN KEY (hero_id) REFERENCES heroes(id) ON DELETE CASCADE ON UPDATE CASCADE,
+     FOREIGN KEY (team_id) REFERENCES teams(id) ON DELETE CASCADE ON UPDATE CASCADE
+)
