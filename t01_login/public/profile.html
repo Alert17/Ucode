@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:thjs="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="backcolor"></div>
+    <div class="body-block shadow-large page_width">
+      <section class="section4">
+        <main>
+          <div class="frame">
+            <h1>Profile</h1>
+            <p>Full name: <span thjs:text="${full_name}"></span></p>
+            <p>E-mail: <span thjs:text="${email}"></span></p>
+            <p>Login: <span thjs:text="${login}"></span></p>
+            <p>Role: <span thjs:text="${user_role}"></span></p>
+          </div>
+        </main>
+      </section>
+    </div>
+  </body>
+</html>

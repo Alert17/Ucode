@@ -1,0 +1,12 @@
+USE ucode_web;
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE IF NOT EXISTS users (
+     id INT AUTO_INCREMENT,
+     user_login VARCHAR NOT NULL UNIQUE,
+     pass VARCHAR NOT NULL,
+     full_name VARCHAR NOT NULL,
+     email VARCHAR NOT NULL UNIQUE,
+     PRIMARY KEY (id)
+);

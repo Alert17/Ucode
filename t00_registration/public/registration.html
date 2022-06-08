@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:thjs="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div></div>
+    <div>
+      <section>
+        <main>
+          <div>
+            <form action="/signup" method="post">
+              <label for="login">Login</label>
+              <input
+                name="login"
+                id="login"
+                type="text"
+                thjs:value="${login}"
+                required
+                autofocus
+              />
+              <label for="full_name">Full name</label>
+              <input
+                name="full_name"
+                id="full_name"
+                type="text"
+                thjs:value="${full_name}"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                name="email"
+                id="email"
+                thjs:value="${email}"
+                type="email"
+                required
+              />
+              <div>
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  autocomplete="on"
+                  required
+                />
+                <span toggle="#password"></span>
+              </div>
+              <div>
+                <label for="confirm_password">Confirm password</label>
+                <input
+                  id="confirm_password"
+                  type="password"
+                  name="confirm_password"
+                  required
+                  autocomplete="on"
+                />
+                <span toggle="#confirm_password"></span>
+              </div>
+              <input type="submit" value="Sign up" />
+            </form>
+            <div>
+              <p><span thjs:text="${errorMsg}"></span></p>
+            </div>
+          </div>
+        </main>
+      </section>
+    </div>
+  </body>
+</html>

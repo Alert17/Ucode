@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:thjs="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>t01</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div></div>
+    <div>
+      <section>
+        <main>
+          <div>
+            <form action="/login" method="post">
+              <label for="login">Login</label>
+              <input name="login" id="login" type="text" required autofocus />
+              <label for="password">Password</label>
+              <div>
+                <input
+                  name="password"
+                  id="password"
+                  type="password"
+                  autocomplete="on"
+                  required
+                />
+                <span toggle="#password"></span>
+              </div>
+              <input type="submit" value="Sign in" />
+            </form>
+            <div style="color: red; text-align: center">
+              <p><span thjs:text="${errorMsg}"></span></p>
+            </div>
+          </div>
+        </main>
+      </section>
+    </div>
+  </body>
+</html>
