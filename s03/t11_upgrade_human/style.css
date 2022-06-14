@@ -1,0 +1,73 @@
+body {
+    position: relative;
+    background: #9c4aec;
+    color: lightgrey;
+    text-align: center;
+    font-family: "Franklin Gothic Book", sans-serif;
+}
+#message {
+    font-family: "Franklin Gothic Book", sans-serif;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 0;
+    color: #000000;
+    z-index: 2;
+    font-size: 20px;
+}
+
+.box {
+    width: 480px;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    background: linear-gradient(#aa8fef, #2d0340);
+    border-radius: 90%;
+    border: 5px solid black;
+
+}
+
+#human {
+    position: absolute;
+    top: 14%;
+    left: 30%;
+    width: 40%;
+
+}
+#properties {
+    color: black;
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    left: 15%;
+}
+button {
+    font-size: 0.95rem;
+
+    margin: 5px;
+    background: #6f2ab0;
+    color: #000000;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all0 .3s ease 0s;
+    outline: none;
+}
+button:hover {
+    color: #404040 !important;
+    background: lightgrey !important;
+    -webkit-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all0 .3s ease 0s;
+}
+.property {
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+.propValue {
+    color: #000000;
+}
+
+.header {
+    color: black;
+}

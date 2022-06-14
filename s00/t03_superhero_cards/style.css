@@ -1,0 +1,61 @@
+img {
+    height: 182px;
+    position: absolute;
+}
+
+.firstCard, .secondCard, .thirdCard, .fourthCard {
+    float: left;
+    display: flex;
+
+    width: 270px;
+    height: 140px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Verdana, serif;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+
+
+
+.name {
+    color: rgb(255, 255, 255);
+    size: 12px;
+    margin: 0;
+    text-align: right;
+    width: 100%;
+    font-weight: bold;
+}
+
+small {
+    color: rgba(255, 255, 255, 0.5);
+
+    size: 9px;
+}
+
+.firstCard {
+    background: linear-gradient(#4568DC, #B06AB3);
+}
+
+.secondCard {
+    background: linear-gradient(#e52d27, #b31217);
+}
+
+.thirdCard {
+    background: linear-gradient(to right, #000, #61045F);
+}
+
+.fourthCard {
+    background: linear-gradient(#e52d27, #000);
+}
+
+.imgHero {
+    margin-top: -32px;
+}
+
+#spider {
+    margin-top: -10px;
+}

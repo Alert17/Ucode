@@ -1,0 +1,31 @@
+
+body {
+    margin-top: 20px;
+}
+.circle {
+    background: green;
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    left: .2em;
+    min-width: 5em;
+    animation: moving 6s infinite;
+}
+
+@keyframes moving {
+    50%{
+        left: 100%;
+        margin-left: -7em;
+    }
+}
+
+.ease:before {
+    animation-timing-function: ease;
+}
+
+.circle:hover {
+    transition: 2s;
+    background: red;
+}

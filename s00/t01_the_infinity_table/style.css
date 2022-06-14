@@ -1,0 +1,59 @@
+img {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+th {
+    color: white;
+}
+
+.header {
+    background-color: black;
+}
+
+
+td {
+    align-content: center;
+    text-align: center;
+}
+.soul {
+    background-color: #ea9a32;
+}
+
+.time {
+    background-color: #0e810e;
+}
+
+.space {
+    background-color: #313186;
+}
+
+.mind {
+    background-color: #e1ea3a;
+}
+
+.reality {
+    background-color: #bc1e1e;
+}
+
+.power {
+    background-color: #9b73dd;
+}
+
+.name {
+    width: 60px;
+}
+
+.color {
+    width: 60px;
+}
+
+.text {
+    padding: 0 30px 0 30px;
+}
+
+.link {
+    text-align: center;
+}

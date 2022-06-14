@@ -1,0 +1,22 @@
+.label {
+    width: 90%;
+    height: 2em;
+    padding: 0 10px 0 10px;
+    border-radius: 4px;
+    color: green;
+    border-color: #4040d9;
+}
+
+.button {
+    height: 2em;
+    padding: 0 10px 0 10px;
+    border-radius: 4px;
+    color: green;
+}
+.label:hover:not(:focus) {
+    color: red;
+}
+
+.button:hover {
+    color: red;
+}

@@ -1,0 +1,12 @@
+.counter {
+    position: fixed;
+    right: 2em;
+    font-weight: 500;
+    border-radius: 7px;
+    color: white;
+}
+
+.image {
+    display: block;
+    margin: 1em auto;
+}

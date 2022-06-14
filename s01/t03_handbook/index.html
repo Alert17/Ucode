@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>t17: handbook</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>HTML</h1>
+<div class="boxholder">
+
+    <div class="box">
+        <p>h1<br>The h1 to h6 tags are used to define HTML headings<br>&lt;h1&gt;Title&lt;/h1&gt;</p>
+        <h1>Title</h1>
+    </div>
+    <div class="box">
+        <p>table<br>defines an HTML table<br><br>&lt;table&gt;...&lt;/table&gt;</p>
+        <table class="like-a">
+            <tr>
+                <tr>Country</tr>
+                <tr>Country</tr>
+                <tr>Country</tr>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </div>
+    <div class="box">
+        <p>hr<br>draws a horizontal line<br><br>&lt;hr&gt;</p>
+        <hr>
+        <p class="like-a">Lorem ipsum</p>
+        <hr>
+    </div>
+    <div class="box">
+        <p>button<br>Clickable button<br><br>&lt;button&gt;Button&lt;/button&gt;</p>
+        <br>
+        <button class="like-a">Button</button>
+    </div>
+</div>
+
+<h1>CSS</h1>
+<div class="boxholder">
+
+    <div class="box">
+        <p>background<br>specifies the background of an element<br><br><br></br>background:[];</p>
+        <br>
+
+            <p style="background: red">Text</p>
+
+    </div>
+    <div class="box">
+        <p>text-transform<br>controls the capitalization of text<br><br>text-transform: uppercase;</p>
+        <p class="like-a">LOREM ipsum</p>
+    </div>
+    <div class="box">
+        <p>font-size<br>specifies the font size of the item. %, px, rem, inherit<br><br>&lt;hr&gt;</p>
+        <hr>
+        <p class="like-a" style="font-size: 24px">Lorem ipsum</p>
+        <hr>
+    </div>
+    <div class="box">
+        <p>border<br>specifies the style of the outline<br><br>border-bottom:2px solid #666</p>
+        <br>
+        <div class="like-a" style="width: 60px; height: 60px; background-color: grey; border-bottom: 2px solid red;"></div>
+    </div>
+</div>
+
+<h1>PROTOCOLS</h1>
+<div class="boxholder">
+
+    <div class="box">
+
+        <p>HTTPS status code<br><br>100 Continue
+            The server has received the request headers and the client should proceed to send the request body (in the
+            case of a request for which a body needs to be sent; for example, a POST request). Sending a large request
+            body to a server after a request has been rejected for inappropriate headers would be inefficient. To have
+            a server check the request's headers, a client must send Expect: 100-continue as a header in its initial
+            request and receive a 100 Continue status code in response before sending the body. If the client receives
+            an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it should not send the request's
+            body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect
+            header as it indicates that the server does not support expectations (this is the case, for example,
+            of HTTP/1.0 servers).<br><br>
+            101 Switching Protocols<br><br>
+            The requester has asked the server to switch protocols and the server has agreed to do so.<br><br>
+            102 Processing (WebDAV; RFC 2518)<br><br>
+            A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete
+            the request. This code indicates that the server has received and is processing the request, but no
+            response is available yet. This prevents the client from timing out and assuming the request was lost.
+            103 Early Hints (RFC 8297)<br><br>
+            Used to return some response headers before final HTTP message.</p>
+        <br>
+
+
+
+    </div>
+    <div class="box">
+        <p>HTTPS methods<br><br>9.1.1 Safe Methods
+            Implementors should be aware that the software represents the user in their interactions over the Internet,
+            and should be careful to allow the user to be aware of any actions they might take which may have an
+            unexpected significance to themselves or others.<br><br>
+
+            In particular, the convention has been established that the GET and HEAD methods SHOULD NOT have the
+            significance of taking an action other than retrieval. These methods ought to be considered "safe".
+            This allows user agents to represent other methods, such as POST, PUT and DELETE, in a special way,
+            so that the user is made aware of the fact that a possibly unsafe action is being requested.<br><br>
+
+            Naturally, it is not possible to ensure that the server does not generate side-effects as a result
+            of performing a GET request; in fact, some dynamic resources consider that a feature. The important
+            distinction here is that the user did not request the side-effects, so therefore cannot be held
+            accountable for them.<br><br>
+
+            9.1.2 Idempotent Methods<br><br>
+            Methods can also have the property of "idempotence" in that (aside from error or expiration issues)
+            the side-effects of N > 0 identical requests is the same as for a single request. The methods GET, HEAD,
+            PUT and DELETE share this property. Also, the methods OPTIONS and TRACE SHOULD NOT have side effects, and
+            so are inherently idempotent.<br><br>
+
+            However, it is possible that a sequence of several requests is non- idempotent, even if all of the
+            methods executed in that sequence are idempotent. (A sequence is idempotent if a single execution of
+            the entire sequence always yields a result that is not changed by a reexecution of all, or part, of that
+            sequence.) For example, a sequence is non-idempotent if its result depends on a value that is later
+            modified in the same sequence.<br><br>
+
+            A sequence that never has side effects is idempotent, by definition (provided that no concurrent
+            operations are being executed on the same set of resources).
+
+    </div>
+    <div class="box">
+        <p>DNS types<br><br>Recursive Query<br><br>
+            In a recursive query, a DNS client provides a hostname, and the DNS Resolver “must” provide an answer—it
+            responds with either a relevant resource record, or an error message if it can't be found. The resolver
+            starts a recursive query process, starting from the DNS Root Server, until it finds the Authoritative Name
+            Server (for more on Authoritative Name Servers see DNS Server Types below) that holds the IP address and
+            other information for the requested hostname.<br><br>
+
+            Iterative Query<br><br>
+            In an iterative query, a DNS client provides a hostname, and the DNS Resolver returns the best answer
+            it can. If the DNS resolver has the relevant DNS records in its cache, it returns them. If not,
+            it refers the DNS client to the Root Server, or another Authoritative Name Server which is nearest
+            to the required DNS zone. The DNS client must then repeat the query directly against the DNS server it
+            was referred to.<br><br>
+
+            Non-Recursive Query<br><br>
+            A non-recursive query is a query in which the DNS Resolver already knows the answer. It either immediately
+            returns a DNS record because it already stores it in local cache, or queries a DNS Name Server which is
+            authoritative for the record, meaning it definitely holds the correct IP for that hostname. In both cases,
+            there is no need for additional rounds of queries (like in recursive or iterative queries). Rather, a
+            response is immediately returned to the client.
+
+            <br><br></p>
+
+    </div>
+
+</div>
+</body>
+
+</html>

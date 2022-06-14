@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+#base {
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+}
+.block {
+    float: left;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+
+    margin: 20px;
+    transition: .1s;
+
+    overflow: hidden;
+    position: relative;
+
+}
+
+#yellow { background: #c3c034; }
+#green { background: #60cb3c; }
+#purple { background: #53366d; }
+#blue { background: #4568dc; }
+#red { background: #a40418; }
+#pink { background: #e67489; }
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.block[accept="false"] { border: 2px dashed black; }

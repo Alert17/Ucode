@@ -1,0 +1,40 @@
+div {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    width: 100%;
+}
+
+.label {
+    position: relative;
+    width: 90%;
+    height: 2em;
+    padding: 0 10px 0 10px;
+    margin-top: 70px;
+    border-radius: 4px;
+    color: green;
+    border-color: #4040d9;
+}
+
+
+
+h1 {
+    position: absolute;
+}
+.button {
+    position: relative;
+    height: 2em;
+    padding: 0 10px 0 10px;
+    border-radius: 4px;
+    color: green;
+}
+.label:hover:not(:focus) {
+    color: red;
+}
+
+.button:hover {
+    color: red;
+}
+

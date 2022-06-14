@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="t02. Image slider">
+    <title>Image slider</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="prev" onclick="listSlides(-1)"></div>
+
+    <div class="slideshow-container">
+
+        <div class="fade">
+            <img src="assets/images/spider.png" alt="Spider-man">
+        </div>
+
+        <div class="fade">
+            <img src="assets/images/america.png" alt="Captain America">
+        </div>
+
+        <div class="fade">
+            <img src="assets/images/iron.png" alt="Iron-man">
+        </div>
+
+    </div>
+
+    <button class="prev" onclick="listSlides(-1)"></button>
+    <button class="next" onclick="listSlides(1)"></button>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

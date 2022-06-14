@@ -1,0 +1,9 @@
+.gauntlet {
+    height: 250px;
+}
+.man {
+    height: 70px;
+}
+.gauntlet:hover + div .even .man:nth-child(2n), .gauntlet:hover + div .odd .man:nth-child(2n+1){
+    visibility: hidden;
+}

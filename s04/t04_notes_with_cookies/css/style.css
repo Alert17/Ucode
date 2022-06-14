@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+body {
+    border-radius: 6px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.buttons {
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 6px;
+    border-width: 0;
+    padding: 10px 30px;
+}
+
+.add {
+    background: #86e5db;
+    color: white;
+}
+
+.form,
+.archive {
+    background: #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.form > textarea {
+    border: 3px solid #12cdb9;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+#cookiesList > p {
+    background: white;
+    border-radius: 0;
+    padding: 5px;
+    margin: 0;
+}
+
+button:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: #12cdb9;
+}
